@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <h1 class="display-3"><%= current_user %></h1>
+
+
+  </div>
+
+
+  <ul class="list-inline">
+		<% @counts.each do |count| %>
+
+			<li class="list-inline-item counter">
+				<div class="counter">
+
+						<a href="/count/<%= count.id %>">
+							<div class="image">
+								<h1 class="text-white"><%= count.title %></h1>
+									<p class="display-3 text-white"><%= count.number %></p>
+							</div>
+
+						</a>
+
+
+						<form action="/count/<%= count.id %>>/plus" method="post">
+								<button type="submit" class="btn-primary btn-block">+</button>
+						</form>
+
+				</div>
+
+
+			</li>
+
+
+		<% end %>
+
+	</ul>
+
+
+
+</div>

@@ -1,0 +1,9 @@
+<ul>
+  <% @countedusers.each do |count|  %>
+    <li>
+      <p><img src="<%= count.user.img %>" alt=""></p>
+      <%= count.user.name %>
+    </li>
+  <% end %>
+
+</ul>
