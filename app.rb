@@ -63,7 +63,7 @@ post '/signup' do
 end
 
 get '/list' do
-  @counts = Count.all
+  @counts = Count.all.order(id: "desc")
 
   erb :list
 end
