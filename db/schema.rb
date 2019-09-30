@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_25_133629) do
+ActiveRecord::Schema.define(version: 2019_09_29_145420) do
 
   create_table "count_users", force: :cascade do |t|
     t.integer "user_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_09_25_133629) do
     t.string "title"
     t.integer "number"
     t.integer "user_id"
+    t.string "img"
     t.index ["user_id"], name: "index_counts_on_user_id"
   end
 

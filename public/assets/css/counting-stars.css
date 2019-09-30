@@ -11,12 +11,11 @@
 
 .image {
   height: 200px;
-  background-image: url("/assets/images/sample/sozai_01.jpg");
+
   background-size: cover;
 }
 
 .jumbotron {
-  background-image: url("/assets/images/signup.jpg");
   background-size: cover;
   background-position: center 60%;
 }

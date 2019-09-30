@@ -1,4 +1,13 @@
-<form action="/new" method="post">
-  <input type="text" name="title" placeholder="title">
-  <input type="submit" value="create">
-</form>
+<div class="container">
+  <div class="row justify-content-center" style="margin-top:30px">
+    <form action="/new" method="post" enctype="multipart/form-data">
+      <input type="text" name="title" placeholder="title" class="form-control"><br>
+      <input type="file" name="file" class="form-control"><br>
+
+      <button type="submit" class="btn btn-primary btn-block">CREATE</button>
+    </form>
+  </div>
+
+
+
+</div>

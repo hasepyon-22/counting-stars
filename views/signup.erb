@@ -1,10 +1,29 @@
-<div>
-  <form action="/signup" method="post" enctype="multipart/form-data">
-    <input type="text" name="name" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <input type="password" name="password_confirmation" placeholder="パスワードの確認">
-    <input type="file" name="file">
-    <input type="submit" value="登録">
-  </form>
+<div class="jumbotron jumbotron-fluid" style="background-image: url(/assets/images/signup.jpg)">
+  <div class="container">
+    <div class="row justify-content-center" style="margin-top: 200px">
+     <span class="text-white">星でも数えようじゃないか</span>
+    </div>
+
+    <div class="row justify-content-center" style="margin-top:10px; margin-bottom:20px">
+        <div>
+          <img src="/assets/images/logo.png">
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <form action="/signup" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="username" class="form-control"><br>
+        <input type="password" name="password" placeholder="password" class="form-control"><br>
+        <input type="password" name="password_confirmation" placeholder="パスワードの確認" class="form-control"><br>
+        <input type="file" name="file" class="form-control"><br>
+        <button type="submit" class="btn btn-secondary btn-block">登録</button>
+      </form>
+    </div>
+
+    <div class="row justify-content-center" style="margin-top:10px; margin-bottom: 400px;">
+      <a href="/" class="text-white">すでにアカウントを持っている方はこちら</a>
+    </div>
+  </div>
+
 
 </div>

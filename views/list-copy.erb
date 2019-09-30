@@ -1,0 +1,56 @@
+<div class="container">
+
+	<div class="row">
+		<button class="btn-success btn-block button-new mx-auto" type="button" onclick="location.href='/new'">
+		New Count
+		</button>
+	</div>
+
+
+	<div>
+		<div class="card-columns">
+			<% @counts.each do |count| %>
+			<div class="card" style="width:18rem">
+				<img class="card-img-top" src="<%= count.img %>">
+				<div class="card-body">
+					<h1 class="text-white"><%= count.title %></h1>
+					<p class="display-3 text-white"><%= count.number %></p>
+					<form action="/count/<%= count.id %>>/plus" method="post">
+								<button type="submit" class="btn-primary btn-block">+</button>
+					</form>
+				</div>
+			</div>
+
+		<% end %>
+
+		</div>
+	</div>
+
+
+
+
+						<%# <a href="/count/<%= count.id %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
