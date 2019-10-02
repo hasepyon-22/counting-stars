@@ -9,6 +9,7 @@ gem 'fastri'
 gem 'bcrypt'
 gem 'dotenv'
 gem 'cloudinary'
+gem 'pry'
 
 gem 'sinatra'
 gem 'sinatra-contrib'

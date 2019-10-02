@@ -15,21 +15,21 @@
 
 
   <ul class="list-inline">
-		<% @counts.each do |count| %>
+		<% @users.each do |user| %>
 
 			<li class="list-inline-item counter">
 				<div class="counter">
 
-						<a href="/count/<%= count.id %>">
-							<div class="image">
-								<h1 class="text-white"><%= count.title %></h1>
-									<p class="display-3 text-white"><%= count.number %></p>
+						<a href="/count/<%= user.count.id %>">
+							<div class="image" style="background-image: url(<%= user.count.img %>)">
+								<h1 class="text-white"><%= user.count.title %></h1>
+									<p class="display-3 text-white"><%= user.count.number %></p>
 							</div>
 
 						</a>
 
 
-						<form action="/count/<%= count.id %>>/plus" method="post">
+						<form action="/count/<%= user.count.id %>>/plus" method="post">
 								<button type="submit" class="btn-primary btn-block">+</button>
 						</form>
 

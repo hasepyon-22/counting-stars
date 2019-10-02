@@ -108,7 +108,7 @@ post '/count/:id/plus' do
     CountUser.create(user_id: current_user.id, count_id: params[:id])
   end
 
-  redirect '/list'
+  redirect back
 end
 
 post '/count-detail/:id/plus' do
@@ -125,7 +125,8 @@ end
 
 
 get '/user/:id' do
-  @counts = Count.where(user_id: params[:id])
+  @users = CountUser.where(user_id: params[:id])
+
   erb :user
 end
 
